@@ -29,13 +29,14 @@ img{
 }
 .wrapper{
     width: 1000px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     /*
-        TODO:
+        TODO: ** Added flex items **
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
@@ -43,7 +44,6 @@ img{
 }
 #site-header{
     margin: auto;
-    align-items: center;
     /*
         TODO
         - Flexbox property here
@@ -96,9 +96,10 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
+    display: inline;
+    justify-content: flex-end;
     /*
-        TODO:
+        TODO: ** ADDED disp inline, just-cont: flex-end**
         - Flexbox - Create general spacing between nav links
     */
 }
