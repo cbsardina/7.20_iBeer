@@ -76,7 +76,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    font-family: Dancing Script;
+    font-family: 'Dancing Script';
     /*
         TODO: **DONE**
         - Use the script font: 'Dancing Script' fot this text
@@ -84,9 +84,9 @@ img{
 }
 #main-navigation{
     background: #444;
-
+    display: flex;
     /*
-        TODO:
+        TODO: **Added display flex, it corrected nav bar**
         - Use Flexbox to arrange the navigation links
     */
 }
@@ -112,20 +112,32 @@ img{
         that the other links
     */
 }
+.added-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    flex-direction: column;
+    width: 400px;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
     /*
         TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
 }
+
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 25%;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -166,8 +178,10 @@ article time{
     color: #666;
 }
 article img{
+  display: block;
+  float: right;
     /*
-        TODO:
+        TODO: **Added float-right;
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
