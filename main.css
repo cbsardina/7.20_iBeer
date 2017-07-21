@@ -29,12 +29,12 @@ img{
 }
 .wrapper{
     width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+    margin: 0 auto;
+    display: block;
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
     /*
         TODO: ** Added flex items **
         - Center up the page
@@ -43,7 +43,8 @@ img{
     */
 }
 #site-header{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     /*
         TODO
         - Flexbox property here
@@ -104,7 +105,7 @@ img{
     */
 }
 #main-navigation #logo{
-    margin-right: 400px;
+    margin-right: 520px;
 
     /*
         TODO:
@@ -114,15 +115,17 @@ img{
 }
 .added-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 80%;
+  align-self: center;
+  margin: -50px auto 0 auto;
 }
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    display: flex;
     flex-direction: column;
-    width: 400px;
+    align-items: flex-start;
     /*flex-wrap: wrap;*/
     /*justify-content: center;*/
     /*align-content: center;*/
@@ -137,9 +140,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 25%;
+    flex-basis: 20%;
     /*
-        TODO:
+        TODO: **Set starting width**
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -178,10 +181,9 @@ article time{
     color: #666;
 }
 article img{
-  display: block;
-  float: right;
+
     /*
-        TODO: **Added float-right;
+        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
